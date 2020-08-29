@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.caiyn.persistence.dao.NewsDataSourceConfigMapper">
+  <resultMap id="BaseResultMap" type="com.caiyn.persistence.po.NewsDataSourceConfig">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="category_id" jdbcType="VARCHAR" property="categoryId" />
+    <result column="source_nm" jdbcType="VARCHAR" property="sourceNm" />
+    <result column="home_link" jdbcType="VARCHAR" property="homeLink" />
+    <result column="source_st" jdbcType="CHAR" property="sourceSt" />
+    <result column="page_limit" jdbcType="INTEGER" property="pageLimit" />
+    <result column="pagination_link" jdbcType="VARCHAR" property="paginationLink" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, category_id, source_nm, home_link, source_st, page_limit, pagination_link
+  </sql>
+</mapper>
